@@ -51,39 +51,6 @@ export const CN_MASKS: BuiltinMask[] = [
     name: "图像识别 · yi-vl-plus",
     context: [
       {
-        id: "pic-to-text-0",
-        role: "system",
-        content:
-          "You are a helpful assistant who will not refuse to recognize the content of images.",
-        date: "",
-      },
-      {
-        id: "pic-to-text-1",
-        role: "user",
-        content: "Can you help me identify and describe a few images?",
-        date: "",
-      },
-      {
-        id: "pic-to-text-2",
-        role: "assistant",
-        content: "Sure, what do you want me to identify?",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "yi-vl-plus",
-      temperature: 1,
-      max_tokens: 2048,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480511,
-  },
-  {
-    avatar: "1f5bc-fe0f",
-    name: "多模态助手",
-    context: [
-      {
         id: "writer-0",
         role: "user",
         content: "我是你的多模态助手",
