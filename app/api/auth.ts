@@ -40,10 +40,10 @@ export function auth(req: NextRequest, modelProvider: ModelProvider) {
   console.log("[Time] ", new Date().toLocaleString());
 
   if (serverConfig.needCode && !serverConfig.codes.has(hashedCode) && !apiKey) {
-    return {
-      error: true,
-      msg: !accessCode ? "empty access code" : "wrong access code",
-    };
+    // return {
+    //   error: true,
+    //   msg: !accessCode ? "empty access code" : "wrong access code",
+    // };
   }
 
   if (serverConfig.hideUserApiKey && !!apiKey) {
