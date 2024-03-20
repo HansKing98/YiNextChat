@@ -73,7 +73,7 @@ export const CN_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "yi-vl-plus",
       temperature: 1,
-      max_tokens: 4096,
+      max_tokens: 2048,
     },
     lang: "cn",
     builtin: true,
@@ -93,7 +93,7 @@ export const CN_MASKS: BuiltinMask[] = [
     modelConfig: {
       model: "yi-vl-plus",
       temperature: 1,
-      max_tokens: 4096,
+      max_tokens: 2048,
     },
     lang: "cn",
     builtin: true,

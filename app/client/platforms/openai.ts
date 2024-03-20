@@ -116,7 +116,7 @@ export class ChatGPTApi implements LLMApi {
         enumerable: true,
         configurable: true,
         writable: true,
-        value: modelConfig.max_tokens,
+        value: 2048 > modelConfig.max_tokens ? modelConfig.max_tokens : 2048,
       });
     }
 
