@@ -25,11 +25,13 @@ One-Click to get a well-designed cross-platform ChatGPT web UI, with GPT3, GPT4 
 [MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
 [Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FChatGPTNextWeb%2FChatGPT-Next-Web&env=OPENAI_API_KEY&env=CODE&project-name=nextchat&repository-name=NextChat)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?demo-title=YiNextChat&demo-description=YiModelAPI+VisualizationModel&demo-url=https://nextchat.hansking.cn&demo-image=https://image.hansking.cn/picgo/YiNextChat.png&project-name=YiNextChat&repository-name=YiNextChat&repository-url=https://github.com/hansking98/YiNextChat&from=templates&skippable-integrations=1&teamCreateStatus=hidden)
 
-[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/ZBUEFA)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/hansking98/YiNextChat)
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Yidadaa/ChatGPT-Next-Web)
+## Features 2024-03-20 by hans
+### 调用Yi系列模型
+### 包含 yi-34b-chat-0205、yi-34b-chat-200k 和 多模态模型yi-vl-plus
 
 ![cover](./docs/images/cover.png)
 
