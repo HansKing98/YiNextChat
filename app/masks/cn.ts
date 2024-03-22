@@ -47,26 +47,6 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480510,
   },
   {
-    avatar: "1f5bc-fe0f",
-    name: "图像识别 · yi-vl-plus",
-    context: [
-      {
-        id: "writer-0",
-        role: "user",
-        content: "我是你的多模态助手",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "yi-vl-plus",
-      temperature: 1,
-      max_tokens: 2048,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480511,
-  },
-  {
     avatar: "1f638",
     name: "文案写手",
     context: [
@@ -429,6 +409,26 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480537,
+  },
+  {
+    avatar: "1f5bc-fe0f",
+    name: "Yi-Vl-Plus 图像",
+    context: [
+      {
+        id: "writer-0",
+        role: "assistant",
+        content: "我是你的多模态助手，你可以发我图片，我会用中文描述图片内容。",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "yi-vl-plus",
+      temperature: 1,
+      max_tokens: 2048,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480511,
   },
   {
     avatar: "1f513",

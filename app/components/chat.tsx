@@ -1100,11 +1100,13 @@ function _Chat() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  
+
   const handlePaste = useCallback(
     async (event: React.ClipboardEvent<HTMLTextAreaElement>) => {
       const currentModel = chatStore.currentSession().mask.modelConfig.model;
-      if(!isVisionModel(currentModel)){return;}
+      if (!isVisionModel(currentModel)) {
+        return;
+      }
       const items = (event.clipboardData || window.clipboardData).items;
       for (const item of items) {
         if (item.kind === "file" && item.type.startsWith("image/")) {
@@ -1299,6 +1301,7 @@ function _Chat() {
                             let newContent: string | MultimodalContent[] =
                               newMessage;
                             const images = getMessageImages(message);
+                            // yi-vl-plus 暂时只支持一张图片
                             if (images.length > 0) {
                               newContent = [{ type: "text", text: newMessage }];
                               for (let i = 0; i < images.length; i++) {

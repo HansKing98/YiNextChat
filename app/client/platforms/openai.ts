@@ -90,6 +90,37 @@ export class ChatGPTApi implements LLMApi {
       content: visionModel ? v.content : getMessageTextContent(v),
     }));
 
+    // 仅支持一图，把除最后一张图的文本取出来，图片忽略掉
+    let tempSavaLastImage: any = [];
+    // 找到最后一个图片的 index
+    let lastImageIndex = -1;
+    messages.forEach((el, index) => {
+      if (
+        index < messages.length &&
+        el.role === "user" &&
+        (el.content?.[0] as { type?: "text" | "image_url" }).type
+      ) {
+        // 有 type 则为图片对话
+        lastImageIndex = index;
+      }
+    });
+
+    messages.forEach((el, index) => {
+      if (
+        index < messages.length &&
+        el.role === "user" &&
+        (el.content[0] as { type?: "text" | "image_url" }).type === "text" &&
+        index !== lastImageIndex
+      ) {
+        tempSavaLastImage.push({
+          ...el,
+          content: (el.content[0] as { text?: string }).text,
+        });
+      } else {
+        tempSavaLastImage.push(el);
+      }
+    });
+
     const modelConfig = {
       ...useAppConfig.getState().modelConfig,
       ...useChatStore.getState().currentSession().mask.modelConfig,
@@ -99,7 +130,7 @@ export class ChatGPTApi implements LLMApi {
     };
 
     const requestPayload = {
-      messages,
+      messages: tempSavaLastImage,
       stream: options.config.stream,
       model: modelConfig.model,
       temperature: modelConfig.temperature,
