@@ -120,6 +120,61 @@ export const KnowledgeCutOffDate: Record<string, string> = {
 
 export const DEFAULT_MODELS = [
   {
+    name: "yi-large",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+  {
+    name: "yi-medium",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+  {
+    name: "yi-vision",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+  {
+    name: "yi-medium-200k",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+  {
+    name: "yi-large-rag",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+  {
+    name: "yi-large-turbo",
+    available: true,
+    provider: {
+      id: "yi",
+      providerName: "Yi Model",
+      providerType: "yi",
+    },
+  },
+
+  {
     name: "yi-34b-chat-0205",
     available: true,
     provider: {
