@@ -174,33 +174,6 @@ export const DEFAULT_MODELS = [
     },
   },
 
-  {
-    name: "yi-34b-chat-0205",
-    available: true,
-    provider: {
-      id: "yi",
-      providerName: "Yi Model",
-      providerType: "yi",
-    },
-  },
-  {
-    name: "yi-34b-chat-200k",
-    available: true,
-    provider: {
-      id: "yi",
-      providerName: "Yi Model",
-      providerType: "yi",
-    },
-  },
-  {
-    name: "yi-vl-plus",
-    available: true,
-    provider: {
-      id: "yi",
-      providerName: "Yi Model",
-      providerType: "yi",
-    },
-  },
   // {
   //   name: "gpt-4",
   //   available: true,

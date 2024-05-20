@@ -46,7 +46,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "yi-34b-chat-0205" as ModelType,
+    model: "yi-large" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 4000,

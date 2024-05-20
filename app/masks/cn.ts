@@ -33,7 +33,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -59,7 +59,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -85,7 +85,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -111,7 +111,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -137,7 +137,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -163,7 +163,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -189,7 +189,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -215,7 +215,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -274,7 +274,7 @@ export const CN_MASKS: BuiltinMask[] = [
     ],
     hideContext: true,
     modelConfig: {
-      model: "yi-vl-plus",
+      model: "yi-vision",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -312,7 +312,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -371,7 +371,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -397,7 +397,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -430,7 +430,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -463,7 +463,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -521,7 +521,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 1,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -536,7 +536,7 @@ export const CN_MASKS: BuiltinMask[] = [
   },
   {
     avatar: "1f5bc-fe0f",
-    name: "Yi-Vl-Plus 图像",
+    name: "yi-vision 图像",
     context: [
       {
         id: "writer-0",
@@ -546,7 +546,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-vl-plus",
+      model: "yi-vision",
       temperature: 1,
       max_tokens: 2048,
     },
@@ -573,7 +573,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "yi-34b-chat-0205",
+      model: "yi-large",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
