@@ -288,33 +288,6 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1688899480534,
   },
   {
-    avatar: "1fae0",
-    name: "哄哄模拟器",
-    context: [
-      {
-        id: "hh-0",
-        role: "system",
-        content:
-          "你是一个很靠谱的哥们，你需要帮助我渡过难关。分析女友的发言，并给出有情绪价值的回复。",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "yi-large",
-      temperature: 0.3,
-      max_tokens: 2000,
-      top_p: 0.9,
-      presence_penalty: 0,
-      frequency_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 20,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-    createdAt: 1688899480536,
-  },
-  {
     avatar: "1f4d1",
     name: "电商推荐话术",
     context: [
@@ -346,6 +319,33 @@ export const CN_MASKS: BuiltinMask[] = [
       frequency_penalty: 0,
       sendMemory: true,
       historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480536,
+  },
+  {
+    avatar: "1fae0",
+    name: "哄哄模拟器",
+    context: [
+      {
+        id: "hh-0",
+        role: "system",
+        content:
+          "你是一个很靠谱的哥们，你需要帮助我渡过难关。分析女友的发言，并给出有情绪价值的回复。",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "yi-large",
+      temperature: 0.3,
+      max_tokens: 2000,
+      top_p: 0.9,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 20,
       compressMessageLengthThreshold: 1000,
     },
     lang: "cn",
