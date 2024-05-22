@@ -646,6 +646,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: false,
     createdAt: 1716368081760,
+    hideContext: true,
   },
   {
     avatar: "1f970",
