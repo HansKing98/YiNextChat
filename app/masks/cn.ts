@@ -684,6 +684,12 @@ export const CN_MASKS: BuiltinMask[] = [
     name: "vscode 数据SQL 表达式",
     context: [
       {
+        id: "ecENSNb7muY_Lmsp2xgUX",
+        date: "2024/5/24 16:11:42",
+        role: "system",
+        content: "你只需根据要求给出对应的正则表达式",
+      },
+      {
         id: "YcWGDbcj8_2Jfeleorp8I",
         date: "",
         role: "user",
