@@ -679,4 +679,42 @@ export const CN_MASKS: BuiltinMask[] = [
     createdAt: 1716367985758,
     hideContext: true,
   },
+  {
+    avatar: "gpt-bot-sql",
+    name: "vscode 数据SQL 表达式",
+    context: [
+      {
+        id: "YcWGDbcj8_2Jfeleorp8I",
+        date: "",
+        role: "user",
+        content:
+          "29275948911        company-0523-ZM1Vzfokit        sk-0ENVPgs47NnqOIDPkM1DEembfv2c8DYh\n21516549108        company-0523-ErowBGMJNQ        sk-KHdFOhYHAEOeqwdsDbfl4tnbnKjvqyJ3\n29226300776        company-0523-7ZtkJw5ymi        sk-XaUankODmm7G7UVKIzdDRfsptXQLzLeY\n21054095081        company-0523-JlwZdTBO5G        sk-OU24WTdzMEfuhWsr4N6cCYuudYYyUpmA\n20597093791        company-0523-14A3TdA047        sk-hyS3lrcGoob5PEDxd6JsthSkLhR63Nqt\n25622246247        company-0523-uzGyMhfwcJ        sk-skMrg3z9sWxi9nQufNg0c6YjPj09Cqn9\n23566889386        company-0523-Bv31fM0gfu        sk-nwymyhYLID04pSSjkoI1kxDeKZJCJnAz\n25024557050        company-0523-JWz2IVREoP        sk-PKVnaX39U19zCUnd24szwTpVy3xI9iBu\n24284127141        company-0523-VVVsQHiw3D        sk-ADHDDDAD6Fmo8Enr9tcVccZDXOsNkWqb\n26860893156        company-0523-hnwC1V8pW1        sk-5PkB1am4U7Hl8QNGUag8xzMV8D6J9MM7\n24070970537        company-0523-ToqNQndg3a        sk-0QImnGFmkZ7Uzsq9tAKxe8KVNWUaMEwR\n28132628874        company-0523-pgK92sV6p7        sk-QELDeT7snlApm5hdj8ExxKYvK1GJP6oq\n29065742384        company-0523-OrgDroXvlg        sk-a4KeDsdEsWGZxhTKQ1I3o0GSMfdPi3e4\n22796472674        company-0523-wN1W6wG2lF        sk-PzjpnJTBZWuwVkM0r9xPYBfj18FCRPBf\n29868073290        company-0523-dUA7Vk60oD        sk-7STQ0CfjskhmZlpTmzoCClFyH2XH2hoe\n21292545031        company-0523-0431Ht5y68        sk-pDCH7mr8NVAj2onqX3vJJvuUxk7ovSyE\n21368651596        company-0523-ziSafagtt4        sk-iihnnqSXMURrrmHXcWjRZqY2heEp79va\n26214094873        company-0523-aj7RrRkNoL        sk-C1EsF1DNaKpyYnWV22cjpovoFzW5ULxQ\n20176284529        company-0523-KY9ziW1vwv        sk-pVyQqdBq6tQdOf0s04wVNU1WNGEOXzuI\n21776990177        company-0523-fv31XWXeuw        sk-06h0sq0V3wudgOfY54OJUDpDw0prka8V\n-----------------------------------------------------\n\n生成一个正则表达式  匹配上面的数据格式 每行生成三个group\n————————\n你会如上功能",
+      },
+      {
+        id: "dMlnS3PhceyZtDG3prBg0",
+        date: "2024/5/24 15:37:45",
+        role: "assistant",
+        content:
+          "为了匹配您提供的数据格式并生成三个捕获组（group），可以使用以下正则表达式：\n\n```js\n(\\d+)\\s+([a-zA-Z0-9-]+)\\s+(sk-[a-zA-Z0-9]+)\n```",
+      },
+    ],
+    syncGlobalConfig: true,
+    modelConfig: {
+      model: "yi-large",
+      temperature: 0.3,
+      top_p: 0.9,
+      max_tokens: 4000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 4,
+      compressMessageLengthThreshold: 1000,
+      enableInjectSystemPrompts: true,
+      template: "{{input}}",
+    },
+    lang: "cn",
+    builtin: false,
+    createdAt: 1716536241621,
+    hideContext: true,
+  },
 ];
